@@ -8,6 +8,7 @@ import Logos from "@/components/logos";
 import Particles from "@/components/ui/particles";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import Link from 'next/link';
 
 export default function Home() {
   const [name, setName] = useState<string>("");
