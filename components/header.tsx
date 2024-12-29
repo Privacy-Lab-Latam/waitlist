@@ -30,7 +30,7 @@ export default function Header() {
             size="sm"
             variant="secondary"
             className="text-yellow-50 transition-all duration-150 ease-linear md:hover:text-yellow-200">
-            <FaGithub className="md:mr-1.5" />
+            {/*<FaGithub className="md:mr-1.5" /> */}
             <span className="hidden md:inline">About Us</span>
           </Button>
         </Link>
