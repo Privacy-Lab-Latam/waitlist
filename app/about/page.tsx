@@ -128,6 +128,21 @@ export default function About() {
                     </div>
                 </div>
             </section>
+
+            <section className="mt-12 text-center">
+                <div className="inline-block">
+                    <p className="text-gray-300 mb-4">For any queries or more information, join our Telegram group:</p>
+                    <a 
+                        href="https://t.me/latamzk" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition duration-200"
+                    >
+                        <span className="mr-2">💬</span>
+                        <span>Privacy LATAM</span>
+                    </a>
+                </div>
+            </section>
         </main>
     );
 }
