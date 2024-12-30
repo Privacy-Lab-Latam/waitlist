@@ -15,11 +15,12 @@ export default function About() {
                 <div className="grid md:grid-cols-1 gap-8 mb-12">
                     <div className="bg-gray-800 p-6 rounded-lg shadow-md">
                         <div className="space-y-4 text-gray-300">
+                            {/*
                             <p>
                                 Zero-knowledge proofs (ZKPs) are cryptographic methods of proving you know a secret without revealing details about the secret 🤯. And that's just a small part of the world of programmable cryptography!
-                            </p>
+                            </p> */}
                             <p>
-                                As you might have guessed, this is very useful in privacy-related tools as they can establish trust and verify claims without revealing sensitive information! if you're interested in building tools that:
+                                {/*As you might have guessed, this is very useful in privacy-related tools as they can establish trust and verify claims without revealing sensitive information!*/} if you're interested in building tools that:
                             </p>
                             <ul className="space-y-2 ml-4">
                                 <li className="flex items-center space-x-2">
