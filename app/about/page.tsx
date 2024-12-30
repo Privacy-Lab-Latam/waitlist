@@ -113,13 +113,6 @@ export default function About() {
                     <h2 className="text-2xl font-semibold tracking-tight text-zinc-100 mb-6">Frequently Asked Questions</h2>
                     <div className="space-y-6">
                         <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-6">
-                            <h3 className="text-lg font-semibold tracking-tight text-zinc-100 mb-2">What is the time commitment?</h3>
-                            <p className="text-sm text-zinc-300">
-                                The program is designed to be flexible and self-paced. However, we recommend dedicating at least 10-15 hours per week to make meaningful progress.
-                            </p>
-                        </div>
-
-                        <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-6">
                             <h3 className="text-lg font-semibold tracking-tight text-zinc-100 mb-2">Do I need prior experience with cryptography?</h3>
                             <p className="text-sm text-zinc-300">
                                 No prior cryptography experience is required! We welcome developers with strong programming fundamentals who are eager to learn about privacy-preserving technologies.
@@ -129,7 +122,7 @@ export default function About() {
                         <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-6">
                             <h3 className="text-lg font-semibold tracking-tight text-zinc-100 mb-2">What kind of support will I receive?</h3>
                             <p className="text-sm text-zinc-300">
-                                You&apos;ll have access to mentorship, technical resources, and a community of like-minded developers. We provide regular feedback and guidance throughout your learning journey.
+                                You&apos;ll have access to experienced mentors, office hours, and a community of like-minded developers. We provide regular guidance throughout your learning journey and help you overcome technical challenges.
                             </p>
                         </div>
 
@@ -137,6 +130,13 @@ export default function About() {
                             <h3 className="text-lg font-semibold tracking-tight text-zinc-100 mb-2">What can I build during the program?</h3>
                             <p className="text-sm text-zinc-300">
                                 You&apos;ll have the opportunity to work on real-world privacy-preserving applications, contribute to open-source projects, and develop your own ideas using ZK proofs and other cryptographic tools.
+                            </p>
+                        </div>
+
+                        <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-6">
+                            <h3 className="text-lg font-semibold tracking-tight text-zinc-100 mb-2">What will I gain from this program?</h3>
+                            <p className="text-sm text-zinc-300">
+                                Upon completing the program, you&apos;ll have comprehensive knowledge about ZKP, MPC and FHE, a bolstered GitHub portfolio from contributing to open-source projects, and potentially earn a grant for further contributions.
                             </p>
                         </div>
                     </div>
