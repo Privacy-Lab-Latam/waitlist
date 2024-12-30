@@ -20,7 +20,7 @@ export default function About() {
                                 Zero-knowledge proofs (ZKPs) are cryptographic methods of proving you know a secret without revealing details about the secret 🤯. And that's just a small part of the world of programmable cryptography!
                             </p> */}
                             <p>
-                                {/*As you might have guessed, this is very useful in privacy-related tools as they can establish trust and verify claims without revealing sensitive information!*/} if you're interested in building tools that:
+                                {/*As you might have guessed, this is very useful in privacy-related tools as they can establish trust and verify claims without revealing sensitive information!*/} if you&apos;re interested in building tools that:
                             </p>
                             <ul className="space-y-2 ml-4">
                                 <li className="flex items-center space-x-2">
@@ -116,14 +116,14 @@ export default function About() {
                     <div className="bg-gray-800 p-6 rounded-lg shadow-md">
                         <h3 className="text-xl font-semibold text-white mb-2">What kind of support will I receive?</h3>
                         <p className="text-gray-300">
-                            You'll have access to mentorship, technical resources, and a community of like-minded developers. We provide regular feedback and guidance throughout your learning journey.
+                            You&apos;ll have access to mentorship, technical resources, and a community of like-minded developers. We provide regular feedback and guidance throughout your learning journey.
                         </p>
                     </div>
 
                     <div className="bg-gray-800 p-6 rounded-lg shadow-md">
                         <h3 className="text-xl font-semibold text-white mb-2">What can I build during the program?</h3>
                         <p className="text-gray-300">
-                            You'll have the opportunity to work on real-world privacy-preserving applications, contribute to open-source projects, and develop your own ideas using ZK proofs and other cryptographic tools.
+                            You&apos;ll have the opportunity to work on real-world privacy-preserving applications, contribute to open-source projects, and develop your own ideas using ZK proofs and other cryptographic tools.
                         </p>
                     </div>
                 </div>
