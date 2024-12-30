@@ -68,7 +68,7 @@ export default function About() {
 
             <section>
                 <h2 className="text-3xl font-semibold text-white mb-6">How it is Structured?</h2>
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid md:grid-cols-2 gap-8 mb-16">
                     <div className="bg-gray-800 p-6 rounded-lg shadow-md">
                         <h3 className="text-xl font-semibold text-white mb-4">AI Flow Paradigm</h3>
                         <p className="text-gray-300">
@@ -91,6 +91,39 @@ export default function About() {
                         <h3 className="text-xl font-semibold text-white mb-4">Comprehensive Toolset</h3>
                         <p className="text-gray-300">
                             Integrated tools for code search, debugging, API interactions, and more, all powered by advanced AI capabilities.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section className="mt-8">
+                <h2 className="text-3xl font-semibold text-white mb-6">Frequently Asked Questions</h2>
+                <div className="space-y-6">
+                    <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 className="text-xl font-semibold text-white mb-2">What is the time commitment?</h3>
+                        <p className="text-gray-300">
+                            The program is designed to be flexible and self-paced. However, we recommend dedicating at least 10-15 hours per week to make meaningful progress.
+                        </p>
+                    </div>
+
+                    <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 className="text-xl font-semibold text-white mb-2">Do I need prior experience with cryptography?</h3>
+                        <p className="text-gray-300">
+                            No prior cryptography experience is required! We welcome developers with strong programming fundamentals who are eager to learn about privacy-preserving technologies.
+                        </p>
+                    </div>
+
+                    <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 className="text-xl font-semibold text-white mb-2">What kind of support will I receive?</h3>
+                        <p className="text-gray-300">
+                            You'll have access to mentorship, technical resources, and a community of like-minded developers. We provide regular feedback and guidance throughout your learning journey.
+                        </p>
+                    </div>
+
+                    <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h3 className="text-xl font-semibold text-white mb-2">What can I build during the program?</h3>
+                        <p className="text-gray-300">
+                            You'll have the opportunity to work on real-world privacy-preserving applications, contribute to open-source projects, and develop your own ideas using ZK proofs and other cryptographic tools.
                         </p>
                     </div>
                 </div>
