@@ -29,11 +29,11 @@ export default function About() {
                     <div className="grid md:grid-cols-1 gap-8 mb-12">
                         <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-6">
                             <div className="space-y-4 text-zinc-300">
-                                <p className="text-sm tracking-tight">
+                                {/*<p className="text-sm tracking-tight">
                                     Zero-knowledge proofs (ZKPs) are cryptographic methods of proving you know a secret without revealing details about the secret 🤯. And that&apos;s just a small part of the world of programmable cryptography!
-                                </p>
+                                </p>*/}
                                 <p className="text-sm tracking-tight">
-                                    As you might have guessed, this is very useful in privacy-related tools as they can establish trust and verify claims without revealing sensitive information! if you&apos;re interested in building tools that:
+                                    {/*As you might have guessed, this is very useful in privacy-related tools as they can establish trust and verify claims without revealing sensitive information!*/} if you&apos;re interested in building tools that:
                                 </p>
                                 <ul className="space-y-2 ml-4">
                                     <li className="flex items-center space-x-2 text-sm tracking-tight">
@@ -170,13 +170,14 @@ export default function About() {
                             <div className="mt-8 space-y-2">
                                 <h3 className="text-xl font-semibold tracking-tight text-zinc-100 mb-4">Learn about PSE</h3>
                                 <ul className="space-y-3">
+                                    {/*
                                     <li className="flex items-center space-x-2">
                                         <span>🌐</span>
                                         <a href="https://pse.dev/en" target="_blank" rel="noopener noreferrer" 
                                             className="text-zinc-400 hover:text-zinc-300 transition-colors">
                                             Check out our website
                                         </a>
-                                    </li>
+                                    </li>*/}
                                     <li className="flex items-center space-x-2">
                                         <span>🐦</span>
                                         <a href="https://twitter.com/latamzk" target="_blank" rel="noopener noreferrer"
