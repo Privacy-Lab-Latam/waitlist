@@ -143,6 +143,56 @@ export default function About() {
                     </a>
                 </div>
             </section>
+
+            <section className="mt-16">
+                <h2 className="text-3xl font-semibold text-white mb-6">What is Privacy LATAM?</h2>
+                <div className="bg-gray-800 p-8 rounded-lg shadow-md">
+                    <div className="space-y-6 text-gray-300">
+                        <p>
+                            PSE is an Ethereum Foundation supported research and development lab dedicated to testing use cases for cryptographic primitives. We build open source infrastructure and tools, host workshops and summer programs, and collaborate with people bringing cryptography to life.
+                        </p>
+                        <p>
+                            Join us this summer to contribute, learn, and shape the future of zero-knowledge technology! We can't wait to welcome you into our community of innovators.
+                        </p>
+                        
+                        <div className="mt-8 space-y-2">
+                            <h3 className="text-xl font-semibold text-white mb-4">Learn about us</h3>
+                            <ul className="space-y-3">
+                                {/*
+                                <li className="flex items-center space-x-2">
+                                    <span>🌐</span>
+                                    <a href="https://pse.dev/en" target="_blank" rel="noopener noreferrer" 
+                                        className="text-blue-400 hover:text-blue-300 transition-colors">
+                                        Check out our website
+                                    </a>
+                                </li> */}
+                                <li className="flex items-center space-x-2">
+                                    <span>🐦</span>
+                                    <a href="https://twitter.com/latamzk" target="_blank" rel="noopener noreferrer"
+                                        className="text-blue-400 hover:text-blue-300 transition-colors">
+                                        Follow us on Twitter
+                                    </a>
+                                </li>
+                                {/*
+                                <li className="flex items-center space-x-2">
+                                    <span>📖</span>
+                                    <a href="https://mirror.xyz/privacy-scaling-explorations.eth" target="_blank" rel="noopener noreferrer"
+                                        className="text-blue-400 hover:text-blue-300 transition-colors">
+                                        Read our blog
+                                    </a>
+                                </li> */}
+                                <li className="flex items-center space-x-2">
+                                    <span>🗣️</span>
+                                    <a href="" target="_blank" rel="noopener noreferrer"
+                                        className="text-blue-400 hover:text-blue-300 transition-colors">
+                                        Come say hi on Telegram
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     );
 }

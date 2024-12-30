@@ -1,7 +1,7 @@
-import Link from "next/link";
-import Image from "next/image";
-import { motion } from "framer-motion";
 import { containerVariants, itemVariants } from "@/lib/animation-variants";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 import TextBlur from "./ui/text-blur";
 
 const logos = [
@@ -26,7 +26,7 @@ export default function Logos() {
           text="Powered by"
         />
       </motion.div>
-
+{/*
       <motion.div variants={itemVariants}>
         <TextBlur
           className="text-center text-base text-zinc-300 sm:text-lg"
@@ -34,7 +34,7 @@ export default function Logos() {
           duration={0.8}
         />
       </motion.div>
-
+*/}
       <motion.div
         variants={itemVariants}
         className="mt-4 grid w-full grid-cols-2 items-center justify-center gap-4 md:mt-6 md:grid-cols-3 md:gap-6">
