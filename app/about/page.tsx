@@ -1,6 +1,14 @@
+import Link from 'next/link';
 export default function About() {
     return (
         <main className="container mx-auto px-4 py-8 max-w-4xl">
+            <div className="container mx-auto px-4 py-8">
+      <Link
+        href="/"
+        className="absolute top-4 left-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300"
+      >
+        Go Back
+      </Link></div>
             <div className="text-center mb-12">
                 <h1 className="text-4xl font-bold text-white mb-4">Privacy Developer Program</h1>
                 <p className="text-xl text-gray-300">Inputting zk knowledge and outputing LATAM builders</p>
@@ -152,9 +160,8 @@ export default function About() {
                             PSE is an Ethereum Foundation supported research and development lab dedicated to testing use cases for cryptographic primitives. We build open source infrastructure and tools, host workshops and summer programs, and collaborate with people bringing cryptography to life.
                         </p>
                         <p>
-                            Join us this summer to contribute, learn, and shape the future of zero-knowledge technology! We can't wait to welcome you into our community of innovators.
+                            Join us this summer to contribute, learn, and shape the future of zero-knowledge technology! We can&apos;t wait to welcome you into our community of innovators.
                         </p>
-                        
                         <div className="mt-8 space-y-2">
                             <h3 className="text-xl font-semibold text-white mb-4">Learn about us</h3>
                             <ul className="space-y-3">
