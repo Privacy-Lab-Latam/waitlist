@@ -168,7 +168,7 @@ export default function About() {
                                 Join us this summer to contribute, learn, and shape the future of zero-knowledge technology! We can&apos;t wait to welcome you into our community of innovators.
                             </p>
                             <div className="mt-8 space-y-2">
-                                <h3 className="text-xl font-semibold tracking-tight text-zinc-100 mb-4">Learn about PSE</h3>
+                                <h3 className="text-xl font-semibold tracking-tight text-zinc-100 mb-4">Learn about us</h3>
                                 <ul className="space-y-3">
                                     {/*
                                     <li className="flex items-center space-x-2">

@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
-import TextBlur from "@/components/ui/text-blur";
 import AnimatedShinyText from "@/components/ui/shimmer-text";
+import TextBlur from "@/components/ui/text-blur";
 import { containerVariants, itemVariants } from "@/lib/animation-variants";
+import { motion } from "framer-motion";
 
 export default function CTA() {
   return (
@@ -14,7 +14,7 @@ export default function CTA() {
         <div className="flex items-center justify-center">
           <div className="flex w-fit items-center justify-center rounded-full bg-muted/80 text-center">
             <AnimatedShinyText className="px-4 py-1">
-              <span>Coming soon to web3 Privacy Academy!</span>
+              <span>Coming soon to W3PN Academy!</span>
             </AnimatedShinyText>
           </div>
         </div>
