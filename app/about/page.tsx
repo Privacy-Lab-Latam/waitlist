@@ -162,7 +162,7 @@ export default function About() {
                     <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-8">
                         <div className="space-y-6 text-zinc-300">
                             <p>
-                                PSE is an Ethereum Foundation supported research and development lab dedicated to testing use cases for cryptographic primitives. We build open source infrastructure and tools, host workshops and summer programs, and collaborate with people bringing cryptography to life.
+                                Privacy LATAM is an initiative to popularize Privacy Preserving Technologies and serve as a hub for PETs, connecting LATAM to the best resources out there. This movement offers free educational resources to help you dive deep into Zero Knowledge Proofs, Fully Homomorphic Encryption, Multi-Party Computation, and the latest in programmable cryptography. Let&apos;s get back to the cypherpunk roots.
                             </p>
                             <p>
                                 Join us this summer to contribute, learn, and shape the future of zero-knowledge technology! We can&apos;t wait to welcome you into our community of innovators.
