@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 const FigtreeFont = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Privacy LatAm — Waitlist",
+  title: "Privacy LatAm",
   description:
     "Hub for PETs connecting LATAM to the best resources out there. Let's get back to the cypherpunk roots.",
 };
