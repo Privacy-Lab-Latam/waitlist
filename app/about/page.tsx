@@ -16,7 +16,7 @@ export default function About() {
 
         <div className="mb-12 text-center">
           <h1 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-            Privacy Developer Program
+            Privacy Contribution Program
           </h1>
           <p className="mt-4 text-lg tracking-tight text-zinc-400">
             Inputting zk knowledge and outputing LATAM builders
