@@ -27,9 +27,9 @@ export default function Header() {
           <Button
             size="sm"
             variant="secondary"
-            className="text-yellow-50 transition-all duration-150 ease-linear md:hover:text-yellow-200">
+            className="text-yellow-50 transition-all duration-150 ease-linear md:hover:text-yellow-200 w-full md:w-auto text-center">
             {/*<FaGithub className="md:mr-1.5" /> */}
-            <span className="hidden md:inline">About Us</span>
+            <span className="block">About Us</span>
           </Button>
         </Link>
       </motion.div>

@@ -5,12 +5,25 @@ import Link from "next/link";
 import TextBlur from "./ui/text-blur";
 
 const logos = [
-  { href: "https://nextjs.org", src: "/nextjs.svg", alt: "Next.js Logo" },
-  { href: "https://notion.so", src: "/notion.svg", alt: "Notion Logo" },
-  { href: "https://resend.com", src: "/resend.svg", alt: "Resend Logo" },
-  { href: "https://upstash.com", src: "/upstash.svg", alt: "Upstash Logo" },
-  { href: "https://ui.shadcn.com", src: "/shadcn.svg", alt: "shadcn Logo" },
-  { href: "https://vercel.com", src: "/vercel.svg", alt: "Vercel Logo" },
+  {
+    href: "https://x.com/privacyguardia",
+    src: "/privacyguardians.png",
+    alt: "Privacy Guardians Logo",
+    className: "w-24 h-auto opacity-85 object-contain",
+  },
+  {
+    href: "https://web3privacy.info/",
+    src: "/web3privacy.svg",
+    alt: "Web3 Privacy Logo" /*,className: "w-24 h-auto opacity-85 object-contain"*/,
+  },
+  {
+    href: "https://x.com/latamzk",
+    src: "/privacylatam.png",
+    alt: "Privacy Latam Logo",
+  },
+  /*{ href: "https://upstash.com", src: "/upstash.svg", alt: "Upstash Logo", className: "w-24 h-auto opacity-85 object-contain"},
+  { href: "https://ui.shadcn.com", src: "/shadcn.svg", alt: "shadcn Logo", className: "w-24 h-auto opacity-85 object-contain"},
+  { href: "https://vercel.com", src: "/vercel.svg", alt: "Vercel Logo", className: "w-24 h-auto opacity-85 object-contain"},*/
 ];
 
 export default function Logos() {
@@ -26,7 +39,7 @@ export default function Logos() {
           text="Powered by"
         />
       </motion.div>
-{/*
+      {/*
       <motion.div variants={itemVariants}>
         <TextBlur
           className="text-center text-base text-zinc-300 sm:text-lg"
@@ -50,7 +63,7 @@ export default function Logos() {
               alt={logo.alt}
               width={100}
               height={100}
-              className="h-auto w-32 opacity-85"
+              className={logo.className || "h-auto w-32 opacity-85"}
             />
           </Link>
         ))}

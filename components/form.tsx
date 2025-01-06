@@ -69,7 +69,7 @@ export default function Form({
         </Link>
         or
         <Link
-          href="https://t.me/latamzk"
+          href="https://t.me/privacylatam"
           rel="noopener noreferrer"
           target="_blank">
           <FaTelegram className="ml-0.5 h-5 w-5 transition-all duration-200 ease-linear hover:text-yellow-200" />

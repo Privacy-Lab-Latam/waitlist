@@ -14,7 +14,7 @@ export default function CTA() {
         <div className="flex items-center justify-center">
           <div className="flex w-fit items-center justify-center rounded-full bg-muted/80 text-center">
             <AnimatedShinyText className="px-4 py-1">
-              <span>Coming soon to Web3 Privacy Now Academy!</span>
+              <span>Coming soon!</span>
             </AnimatedShinyText>
           </div>
         </div>
@@ -30,7 +30,7 @@ export default function CTA() {
       <motion.div variants={itemVariants}>
         <TextBlur
           className="text-center text-3xl font-medium tracking-tighter sm:text-5xl"
-          text="The ZK Developer Program for LATAM builders"
+          text="The Privacy Contribution Program for LATAM builders"
         />
       </motion.div>
 
