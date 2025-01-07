@@ -74,7 +74,7 @@ const tools = [
   {
     icon: "🗣️",
     text: "Join Telegram Community",
-    link: "https://t.me/latamzk",
+    link: "https://t.me/privacylatam",
     bgColor: "bg-sky-600",
     hoverColor: "hover:bg-sky-700",
   },
