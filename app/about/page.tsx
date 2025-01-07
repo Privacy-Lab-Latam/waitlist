@@ -1,5 +1,84 @@
 import Particles from "@/components/ui/particles";
 import Link from "next/link";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../../components/ui/accordion";
+
+const faqs = [
+  {
+    question: "Do I need prior experience with cryptography?",
+    answer:
+      "No prior cryptography experience is required! We welcome developers with strong programming fundamentals who are eager to learn about privacy-preserving technologies.",
+  },
+  {
+    question: "What kind of support will I receive?",
+    answer:
+      "You'll have access to experienced mentors, office hours, and a community of like-minded developers. We provide regular guidance throughout your learning journey and help you overcome technical challenges.",
+  },
+  {
+    question: "What can I build during the program?",
+    answer:
+      "You'll have the opportunity to work on real-world privacy-preserving applications, contribute to open-source projects, and develop your own ideas using ZK proofs and other cryptographic tools.",
+  },
+  {
+    question: "What will I gain from this program?",
+    answer:
+      "Upon completing the program, you'll have comprehensive knowledge about ZKP, MPC and FHE, a bolstered GitHub portfolio from contributing to open-source projects, and potentially earn a grant for further contributions.",
+  },
+];
+
+const programLayers = [
+  {
+    title: "General Knowledge Layer",
+    items: [
+      "Basic concepts of zero-knowledge proofs",
+      "Graphical explanations for each concept's workflow",
+      "Overview of available technologies",
+    ],
+  },
+  {
+    title: "Specialization Layer",
+    items: [
+      "Comprehensive technology deep-dives",
+      "Hands-on practical workshops",
+      "Step-by-step implementations",
+      "Detailed information on privacy-focused projects for each technology",
+    ],
+  },
+  {
+    title: "Contribution Layer",
+    items: [
+      "Curated repository links and Good First Issues listings",
+      "Enhanced rewards for documentation contributions that demonstrate practical applications of privacy projects",
+    ],
+  },
+];
+
+const interests = [
+  { icon: "💯", text: "Respect & preserve user privacy" },
+  { icon: "🥸", text: "Allow users to securely authenticate themselves" },
+  { icon: "🤫", text: "Do confidential transactions on the blockchain" },
+];
+
+const tools = [
+  {
+    icon: "🐦",
+    text: "Follow us on Twitter",
+    link: "https://twitter.com/latamzk",
+    bgColor: "bg-blue-600",
+    hoverColor: "hover:bg-blue-700",
+  },
+  {
+    icon: "🗣️",
+    text: "Join Telegram Community",
+    link: "https://t.me/latamzk",
+    bgColor: "bg-sky-600",
+    hoverColor: "hover:bg-sky-700",
+  },
+];
 
 export default function About() {
   return (
@@ -36,26 +115,18 @@ export default function About() {
           <div className="mb-12 grid gap-8 md:grid-cols-1">
             <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-6">
               <div className="space-y-4 text-zinc-300">
-                {/*<p className="text-sm tracking-tight">
-                                    Zero-knowledge proofs (ZKPs) are cryptographic methods of proving you know a secret without revealing details about the secret 🤯. And that&apos;s just a small part of the world of programmable cryptography!
-                                </p>*/}
                 <p className="text-lg tracking-tight">
-                  {/*As you might have guessed, this is very useful in privacy-related tools as they can establish trust and verify claims without revealing sensitive information!*/}{" "}
                   if you&apos;re interested in building tools that:
                 </p>
                 <ul className="ml-4 space-y-2">
-                  <li className="flex items-center space-x-2 text-lg tracking-tight">
-                    <span>💯</span>
-                    <span>Respect & preserve user privacy</span>
-                  </li>
-                  <li className="flex items-center space-x-2 text-lg tracking-tight">
-                    <span>🥸</span>
-                    <span>Allow users to securely authenticate themselves</span>
-                  </li>
-                  <li className="flex items-center space-x-2 text-lg tracking-tight">
-                    <span>🤫</span>
-                    <span>Do confidential transactions on the blockchain</span>
-                  </li>
+                  {interests.map((interest, index) => (
+                    <li
+                      key={index}
+                      className="flex items-center space-x-2 text-lg tracking-tight">
+                      <span>{interest.icon}</span>
+                      <span>{interest.text}</span>
+                    </li>
+                  ))}
                 </ul>
                 <p className="text-lg tracking-tight text-zinc-300">
                   Then this program might be for you!
@@ -63,75 +134,6 @@ export default function About() {
               </div>
             </div>
           </div>
-          {/*          <div className="mb-12 grid gap-8 md:grid-cols-1">
-            <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-6">
-              <div className="space-y-4 text-zinc-300">
-                <p className="text-lg tracking-tight">
-                  Zero-knowledge proofs (ZKPs) are cryptographic methods of
-                  proving you know a secret without revealing details about the
-                  secret 🤯. And that&apos;s just a small part of the world of
-                  programmable cryptography!
-                </p>
-                <p className="text-lg tracking-tight">
-                  As you might have guessed, this is very useful in
-                  privacy-related tools as they can establish trust and verify
-                  claims without revealing sensitive information!
-                </p>
-              </div>
-            </div>
-          <h2 className="mb-6 text-2xl font-semibold tracking-tight text-zinc-100">
-            Program Stages
-          </h2>
-          <div className="space-y-4 text-zinc-300">
-            <div className="flex items-start space-x-4">
-              <svg
-                className="mt-1 h-5 w-5 flex-shrink-0 text-blue-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              <p className="text-lg">Stage 1️⃣: General Knowledge Layer</p>
-            </div>
-            <div className="flex items-start space-x-4">
-              <svg
-                className="mt-1 h-5 w-5 flex-shrink-0 text-blue-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              <p className="text-lg">Stage 2️⃣: Specialization Layer</p>
-            </div>
-            <div className="flex items-start space-x-4">
-              <svg
-                className="mt-1 h-5 w-5 flex-shrink-0 text-blue-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              <p className="text-lg">Stage 3️⃣: Contribution Layer</p>
-            </div>
-          </div>*/}
         </section>
 
         <section>
@@ -139,112 +141,31 @@ export default function About() {
             How it is Structured?
           </h2>
           <div className="mb-16 grid gap-8 md:grid-cols-2">
-            <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-6">
-              <h3 className="mb-4 text-xl font-semibold tracking-tight text-zinc-100">
-                General Knowledge Layer
-              </h3>
-              <ul className="text-lg text-zinc-300">
-                <li>- Basic concepts of zero-knowledge proofs</li>
-                <li>
-                  - Graphical explanations for each concept&apos;s workflow
-                </li>
-                <li>- Overview of available technologies</li>
-              </ul>
-            </div>
-            <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-6">
-              <h3 className="mb-4 text-xl font-semibold tracking-tight text-zinc-100">
-                Specialization Layer
-              </h3>
-              <ul className="text-lg text-zinc-300">
-                <li>- Comprehensive technology deep-dives</li>
-                <li>- Hands-on practical workshops</li>
-                <li>- Step-by-step implementations</li>
-                <li>
-                  - Detailed information on privacy-focused projects for each
-                  technology
-                </li>
-              </ul>
-            </div>
-            <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-6">
-              <h3 className="mb-4 text-xl font-semibold tracking-tight text-zinc-100">
-                Contribution Layer
-              </h3>
-              <ul className="text-lg text-zinc-300">
-                <li>
-                  - Curated repository links and Good First Issues listings
-                </li>
-                <li>
-                  - Enhanced rewards for documentation contributions that
-                  demonstrate practical applications of privacy projects
-                </li>
-              </ul>
-            </div>
-            {/*}
-            <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-6">
-              <h3 className="mb-4 text-xl font-semibold tracking-tight text-zinc-100">
-                Comprehensive Toolset
-              </h3>
-              <p className="text-lg text-zinc-300">
-                Integrated tools for code search, debugging, API interactions,
-                and more, all powered by advanced AI capabilities.
-              </p>
-            </div> */}
+            {programLayers.map((layer, index) => (
+              <div
+                key={index}
+                className="rounded-lg border border-zinc-800 bg-zinc-900 p-6">
+                <h3 className="mb-4 text-xl font-semibold tracking-tight text-zinc-100">
+                  {layer.title}
+                </h3>
+                <ul className="text-lg text-zinc-300">
+                  {layer.items.map((item, idx) => (
+                    <li key={idx}>- {item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </section>
 
-        <section className="mt-8">
-          <h2 className="mb-6 text-2xl font-semibold tracking-tight text-zinc-100">
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-6">
-            <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-6">
-              <h3 className="mb-2 text-xl font-semibold tracking-tight text-zinc-100">
-                Do I need prior experience with cryptography?
-              </h3>
-              <p className="text-lg text-zinc-300">
-                No prior cryptography experience is required! We welcome
-                developers with strong programming fundamentals who are eager to
-                learn about privacy-preserving technologies.
-              </p>
-            </div>
-
-            <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-6">
-              <h3 className="mb-2 text-xl font-semibold tracking-tight text-zinc-100">
-                What kind of support will I receive?
-              </h3>
-              <p className="text-lg text-zinc-300">
-                You&apos;ll have access to experienced mentors, office hours,
-                and a community of like-minded developers. We provide regular
-                guidance throughout your learning journey and help you overcome
-                technical challenges.
-              </p>
-            </div>
-
-            <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-6">
-              <h3 className="mb-2 text-xl font-semibold tracking-tight text-zinc-100">
-                What can I build during the program?
-              </h3>
-              <p className="text-lg text-zinc-300">
-                You&apos;ll have the opportunity to work on real-world
-                privacy-preserving applications, contribute to open-source
-                projects, and develop your own ideas using ZK proofs and other
-                cryptographic tools.
-              </p>
-            </div>
-
-            <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-6">
-              <h3 className="mb-2 text-xl font-semibold tracking-tight text-zinc-100">
-                What will I gain from this program?
-              </h3>
-              <p className="text-lg text-zinc-300">
-                Upon completing the program, you&apos;ll have comprehensive
-                knowledge about ZKP, MPC and FHE, a bolstered GitHub portfolio
-                from contributing to open-source projects, and potentially earn
-                a grant for further contributions.
-              </p>
-            </div>
-          </div>
-        </section>
+        <Accordion type="multiple" className="w-full">
+          {faqs.map((faq, index) => (
+            <AccordionItem key={index} value={`item-${index}`}>
+              <AccordionTrigger>{faq.question}</AccordionTrigger>
+              <AccordionContent>{faq.answer}</AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
 
         <section className="mt-12 text-center">
           <div className="inline-block">
@@ -269,52 +190,28 @@ export default function About() {
           <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-8">
             <div className="space-y-6 text-zinc-300">
               <p className="text-lg">
-                Privacy LATAM is an initiative to popularize Privacy Enhancing
-                Technologies and serve as a hub for PETs, connecting LATAM to
-                the best resources out there. This movement offers free
-                educational resources to help you dive deep into the latest in
-                programmable cryptography. Let&apos;s get back to the cypherpunk
-                roots.
+                Privacy LATAM is your gateway to Privacy Enhancing Technologies
+                in Latin America. We provide free resources and build a
+                community around programmable cryptography and
+                privacy-preserving solutions.
               </p>
-              <p className="text-lg">
-                Join us this summer to contribute, learn, and shape the future
-                of zero-knowledge technology! We can&apos;t wait to welcome you
-                into our community of innovators.
-              </p>
-              <div className="mt-8 space-y-2">
+              <div className="mt-8 flex flex-col items-center space-y-4">
                 <h3 className="mb-4 text-xl font-semibold tracking-tight text-zinc-100">
-                  Learn about us
+                  Join Our Community
                 </h3>
-                <ul className="space-y-3">
-                  {/*
-                                    <li className="flex items-center space-x-2">
-                                        <span>🌐</span>
-                                        <a href="https://pse.dev/en" target="_blank" rel="noopener noreferrer" 
-                                            className="text-zinc-400 hover:text-zinc-300 transition-colors">
-                                            Check out our website
-                                        </a>
-                                    </li>*/}
-                  <li className="flex items-center space-x-2">
-                    <span>🐦</span>
+                <div className="flex flex-wrap items-center justify-center gap-4">
+                  {tools.map((tool, index) => (
                     <a
-                      href="https://twitter.com/latamzk"
+                      key={index}
+                      href={tool.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-zinc-400 transition-colors hover:text-zinc-300">
-                      Follow us on Twitter
+                      className={`inline-flex items-center space-x-2 rounded-lg px-6 py-3 text-base font-medium text-white transition-colors ${tool.bgColor} ${tool.hoverColor}`}>
+                      <span className="text-xl">{tool.icon}</span>
+                      <span>{tool.text}</span>
                     </a>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <span>🗣️</span>
-                    <a
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-zinc-400 transition-colors hover:text-zinc-300">
-                      Come say hi on Telegram
-                    </a>
-                  </li>
-                </ul>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
