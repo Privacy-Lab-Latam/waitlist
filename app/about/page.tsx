@@ -32,27 +32,27 @@ const faqs = [
 
 const programLayers = [
   {
-    title: "General Knowledge Layer",
+    title: "Phase 1: Foundations",
     items: [
-      "Basic concepts of zero-knowledge proofs",
-      "Graphical explanations for each concept's workflow",
-      "Overview of available technologies",
+      "Introduction to ZKP, FHE, and MPC",
+      "Hands-on workshops and tutorials",
+      "Community building and networking",
     ],
   },
   {
-    title: "Specialization Layer",
+    title: "Phase 2: Project Development",
     items: [
-      "Comprehensive technology deep-dives",
-      "Hands-on practical workshops",
-      "Step-by-step implementations",
-      "Detailed information on privacy-focused projects for each technology",
+      "Selection of open-source projects",
+      "Mentorship and guidance from experts",
+      "Collaboration with other developers",
     ],
   },
   {
-    title: "Contribution Layer",
+    title: "Phase 3: Deployment and Showcase",
     items: [
-      "Curated repository links and Good First Issues listings",
-      "Enhanced rewards for documentation contributions that demonstrate practical applications of privacy projects",
+      "Deployment of developed projects",
+      "Presentation of results to VCs",
+      "Opportunity for further collaboration",
     ],
   },
 ];
@@ -66,14 +66,14 @@ const interests = [
 const tools = [
   {
     icon: "🐦",
-    text: "Follow us on Twitter",
+    text: "Twitter",
     link: "https://twitter.com/latamzk",
     bgColor: "bg-blue-600",
     hoverColor: "hover:bg-blue-700",
   },
   {
     icon: "🗣️",
-    text: "Join Telegram Community",
+    text: "Telegram",
     link: "https://t.me/privacylatam",
     bgColor: "bg-sky-600",
     hoverColor: "hover:bg-sky-700",
@@ -158,15 +158,7 @@ export default function About() {
           </div>
         </section>
 
-        <Accordion type="multiple" className="w-full">
-          {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger>{faq.question}</AccordionTrigger>
-              <AccordionContent>{faq.answer}</AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-
+        {/*
         <section className="mt-12 text-center">
           <div className="inline-block">
             <p className="mb-4 text-lg tracking-tight text-zinc-300">
@@ -182,6 +174,16 @@ export default function About() {
             </a>
           </div>
         </section>
+*/}
+
+        <Accordion type="multiple" className="w-full">
+          {faqs.map((faq, index) => (
+            <AccordionItem key={index} value={`item-${index}`}>
+              <AccordionTrigger>{faq.question}</AccordionTrigger>
+              <AccordionContent>{faq.answer}</AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
 
         <section className="mt-16">
           <h2 className="mb-6 text-3xl font-semibold tracking-tight text-zinc-100">

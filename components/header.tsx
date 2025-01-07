@@ -10,15 +10,18 @@ export default function Header() {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="fixed flex right-0 left-0 justify-between top-0 z-[50] m-4">
+      className="fixed left-0 right-0 top-0 z-[50] m-4 flex justify-between">
       <motion.div variants={itemVariants}>
-        <Link href="https://academy.web3privacy.info/" rel="noopener noreferrer" target="_blank">
+        <Link
+          href="https://academy.web3privacy.info/"
+          rel="noopener noreferrer"
+          target="_blank">
           <Button
             size="sm"
             variant="secondary"
-            className="text-yellow-50 transition-all duration-150 ease-linear md:hover:text-yellow-200">
+            className="w-full text-center text-yellow-50 transition-all duration-150 ease-linear md:w-auto md:hover:text-yellow-200">
             {/*<SiNotion className="md:mr-1.5" />*/}
-            <span className="hidden md:inline">Enroll in the Privacy 101 course</span>
+            <span className="block">Enroll in the Privacy 101 course</span>
           </Button>
         </Link>
       </motion.div>
@@ -27,7 +30,7 @@ export default function Header() {
           <Button
             size="sm"
             variant="secondary"
-            className="text-yellow-50 transition-all duration-150 ease-linear md:hover:text-yellow-200 w-full md:w-auto text-center">
+            className="w-full text-center text-yellow-50 transition-all duration-150 ease-linear md:w-auto md:hover:text-yellow-200">
             {/*<FaGithub className="md:mr-1.5" /> */}
             <span className="block">About Us</span>
           </Button>
