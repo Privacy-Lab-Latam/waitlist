@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Particles from "@/components/ui/particles";
 import Link from "next/link";
 import {
@@ -88,8 +89,11 @@ export default function About() {
         <div className="container mx-auto px-4 py-8">
           <Link
             href="/"
-            className="inline-flex h-10 items-center justify-center rounded-md bg-zinc-900 px-8 py-6 text-sm font-medium text-zinc-50 transition-colors hover:bg-zinc-900/90 focus:outline-none focus:ring-2 focus:ring-zinc-400 focus:ring-offset-2 focus:ring-offset-zinc-50 disabled:pointer-events-none disabled:opacity-50 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-100/90 dark:focus:ring-zinc-400 dark:focus:ring-offset-zinc-900">
-            Go Back
+            className="w-full text-center text-yellow-50 transition-all duration-150 ease-linear md:w-auto md:hover:text-yellow-200">
+            <Button size="sm" variant="secondary">
+              {/*<FaGithub className="md:mr-1.5" /> */}
+              <span className="block">Home</span>
+            </Button>
           </Link>
         </div>
 

@@ -21,7 +21,7 @@ export default function Header() {
             variant="secondary"
             className="w-full text-center text-yellow-50 transition-all duration-150 ease-linear md:w-auto md:hover:text-yellow-200">
             {/*<SiNotion className="md:mr-1.5" />*/}
-            <span className="block">Enroll in the Privacy 101 course</span>
+            <span className="block">Privacy 101 course</span>
           </Button>
         </Link>
       </motion.div>
