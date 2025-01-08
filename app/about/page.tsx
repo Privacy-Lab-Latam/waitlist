@@ -166,33 +166,21 @@ export default function About() {
           </div>
         </section>
 
-        {/*
-        <section className="mt-12 text-center">
-          <div className="inline-block">
-            <p className="mb-4 text-lg tracking-tight text-zinc-300">
-              For any queries or more information, join our Telegram group:
-            </p>
-            <a
-              href="https://t.me/latamzk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex h-10 items-center justify-center rounded-md bg-zinc-900 px-8 py-6 text-sm font-medium text-zinc-50 transition-colors hover:bg-zinc-900/90 focus:outline-none focus:ring-2 focus:ring-zinc-400 focus:ring-offset-2 focus:ring-offset-zinc-50 disabled:pointer-events-none disabled:opacity-50 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-100/90 dark:focus:ring-zinc-400 dark:focus:ring-offset-zinc-900">
-              <span className="mr-2">💬</span>
-              <span>Privacy LATAM</span>
-            </a>
-          </div>
+        {/* This section provides answers to frequently asked questions about the program, covering topics such as prerequisites, support, and outcomes. */}
+        <section>
+          <h2 className="mb-6 text-2xl font-semibold tracking-tight text-zinc-100">
+            Frequently Asked Questions
+          </h2>
+          <Accordion type="multiple" className="w-full">
+            {faqs.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index}`}>
+                <AccordionTrigger>{faq.question}</AccordionTrigger>
+                <AccordionContent>{faq.answer}</AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </section>
-*/}
-
-        <Accordion type="multiple" className="w-full">
-          {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger>{faq.question}</AccordionTrigger>
-              <AccordionContent>{faq.answer}</AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-
+        {/* This section provides an overview of Privacy LATAM, explaining what the platform is about and how it can benefit developers interested in privacy-enhancing technologies. 
         <section className="mt-16">
           <h2 className="mb-6 text-3xl font-semibold tracking-tight text-zinc-100">
             What is Privacy LATAM?
@@ -224,6 +212,21 @@ export default function About() {
                 </div>
               </div>
             </div>
+          </div>
+        </section> */}
+        <section className="mt-12 text-center">
+          <div className="inline-block">
+            <p className="mb-4 text-lg tracking-tight text-zinc-300">
+              For any queries or more information, join our Telegram group:
+            </p>
+            <a
+              href="https://t.me/latamzk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-10 items-center justify-center rounded-md bg-zinc-900 px-8 py-6 text-sm font-medium text-zinc-50 transition-colors hover:bg-zinc-900/90 focus:outline-none focus:ring-2 focus:ring-zinc-400 focus:ring-offset-2 focus:ring-offset-zinc-50 disabled:pointer-events-none disabled:opacity-50 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-100/90 dark:focus:ring-zinc-400 dark:focus:ring-offset-zinc-900">
+              <span className="mr-2">💬</span>
+              <span>Privacy LATAM</span>
+            </a>
           </div>
         </section>
       </main>
