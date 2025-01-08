@@ -32,7 +32,7 @@ const faqs = [
 
 const programLayers = [
   {
-    title: "Phase 1: Foundations",
+    title: "Phase 1: Learn",
     items: [
       "Introduction to ZKP, FHE, and MPC",
       "Hands-on workshops and tutorials",
@@ -40,7 +40,7 @@ const programLayers = [
     ],
   },
   {
-    title: "Phase 2: Project Development",
+    title: "Phase 2: Build",
     items: [
       "Selection of open-source projects",
       "Mentorship and guidance from experts",
@@ -48,7 +48,7 @@ const programLayers = [
     ],
   },
   {
-    title: "Phase 3: Deployment and Showcase",
+    title: "Phase 3: Contribute",
     items: [
       "Deployment of developed projects",
       "Presentation of results to VCs",
@@ -88,7 +88,7 @@ export default function About() {
         <div className="container mx-auto px-4 py-8">
           <Link
             href="/"
-            className="absolute left-4 top-4 inline-flex h-10 items-center justify-center rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-zinc-50 transition-colors hover:bg-zinc-900/90 focus:outline-none focus:ring-2 focus:ring-zinc-400 focus:ring-offset-2 focus:ring-offset-zinc-50 disabled:pointer-events-none disabled:opacity-50 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-100/90 dark:focus:ring-zinc-400 dark:focus:ring-offset-zinc-900">
+            className="inline-flex h-10 items-center justify-center rounded-md bg-zinc-900 px-8 py-6 text-sm font-medium text-zinc-50 transition-colors hover:bg-zinc-900/90 focus:outline-none focus:ring-2 focus:ring-zinc-400 focus:ring-offset-2 focus:ring-offset-zinc-50 disabled:pointer-events-none disabled:opacity-50 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-100/90 dark:focus:ring-zinc-400 dark:focus:ring-offset-zinc-900">
             Go Back
           </Link>
         </div>
@@ -136,21 +136,25 @@ export default function About() {
           </div>
         </section>
 
+        {/* This section provides an overview of the program structure, detailing the different phases and what participants can expect to learn and accomplish in each phase. */}
         <section>
           <h2 className="mb-6 text-2xl font-semibold tracking-tight text-zinc-100">
             How it is Structured?
           </h2>
-          <div className="mb-16 grid gap-8 md:grid-cols-2">
+          <div className="mb-16 grid gap-6 md:grid-cols-3">
             {programLayers.map((layer, index) => (
               <div
                 key={index}
-                className="rounded-lg border border-zinc-800 bg-zinc-900 p-6">
+                className="rounded-lg border border-zinc-800 bg-zinc-900 p-6 transition-all hover:border-zinc-700">
                 <h3 className="mb-4 text-xl font-semibold tracking-tight text-zinc-100">
                   {layer.title}
                 </h3>
-                <ul className="text-lg text-zinc-300">
+                <ul className="space-y-2 text-lg text-zinc-300">
                   {layer.items.map((item, idx) => (
-                    <li key={idx}>- {item}</li>
+                    <li key={idx} className="flex items-start">
+                      <span className="mr-2">•</span>
+                      <span>{item}</span>
+                    </li>
                   ))}
                 </ul>
               </div>

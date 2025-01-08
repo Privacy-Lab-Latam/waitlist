@@ -8,7 +8,7 @@ export default function Footer() {
       initial="hidden"
       animate="visible"
       className="mt-auto flex w-full items-center justify-center gap-1 border-t bg-background p-6 text-muted-foreground md:justify-start">
-      <motion.div variants={itemVariants}>
+      <motion.div variants={itemVariants} className="w-full text-center">
         {/*Brought to you by{" "} */}Let&apos;s get back to the cypherpunk
         roots!
         {/*<Link href="/about" rel="noopener noreferrer" target="_blank">
