@@ -1,14 +1,13 @@
 "use client";
 
-import { toast } from "sonner";
-import { useState } from "react";
 import CTA from "@/components/cta";
+import Footer from "@/components/footer";
 import Form from "@/components/form";
+import Header from "@/components/header";
 import Logos from "@/components/logos";
 import Particles from "@/components/ui/particles";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import Link from 'next/link';
+import { useState } from "react";
+import { toast } from "sonner";
 
 export default function Home() {
   const [name, setName] = useState<string>("");
