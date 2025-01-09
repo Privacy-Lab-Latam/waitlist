@@ -30,7 +30,7 @@ export default function CTA() {
       <motion.div variants={itemVariants}>
         <TextBlur
           className="text-center text-3xl font-medium tracking-tighter sm:text-5xl"
-          text="The Privacy Contribution Program for LATAM builders"
+          text="The Privacy Contribution Program for developers"
         />
       </motion.div>
 

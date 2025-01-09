@@ -7,7 +7,7 @@ import "./globals.css";
 const FigtreeFont = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Privacy LatAm",
+  title: "Privacy LATAM",
   description:
     "Hub for PETs connecting LATAM to the best resources out there. Let's get back to the cypherpunk roots.",
 };
