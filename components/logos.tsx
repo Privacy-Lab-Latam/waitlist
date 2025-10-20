@@ -12,11 +12,6 @@ const logos = [
     className: "w-24 h-auto opacity-85 object-contain",
   },
   {
-    href: "https://web3privacy.info/",
-    src: "/web3privacy.svg",
-    alt: "Web3 Privacy Logo" /*,className: "w-24 h-auto opacity-85 object-contain"*/,
-  },
-  {
     href: "https://x.com/latamzk",
     src: "/privacylatam.png",
     alt: "Privacy Latam Logo",
@@ -50,7 +45,7 @@ export default function Logos() {
 */}
       <motion.div
         variants={itemVariants}
-        className="mt-4 grid w-full grid-cols-2 items-center justify-center gap-4 md:mt-6 md:grid-cols-3 md:gap-6">
+        className="mt-4 flex w-full items-center justify-center gap-4 md:mt-6 md:gap-6">
         {logos.map((logo, index) => (
           <Link
             key={index}
